@@ -38,7 +38,6 @@ import kr.ds.data.BaseResultListener;
 import kr.ds.data.GcmData;
 
 public class MainActivity extends AppCompatActivity {
-
     private static final String TAG = "MainActivity";
     private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     private BroadcastReceiver mRegistrationBroadcastReceiver;
@@ -51,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
     private MyWebChromeClient mChromeClient;
     private SharedPreferences sharedPreferences;
     private final Handler handler = new Handler();
+    private String Test = "!!";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
