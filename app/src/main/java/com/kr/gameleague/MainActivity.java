@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     private final Handler handler = new Handler();
     private String Test = "!!";
+    private String Test2 =  "!!";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
