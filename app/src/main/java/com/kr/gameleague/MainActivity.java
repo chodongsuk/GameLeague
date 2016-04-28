@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     private BroadcastReceiver mRegistrationBroadcastReceiver;
-    public static final String BASE_URL = "http://게임리그.com";
+    public static final String BASE_URL = "http://saving1004.com";
     public static final int FILECHOOSER_RESULTCODE = 2;
     public static final int INPUT_FILE_REQUEST_CODE = 1;
     public static final int AREA_RESULTCODE = 3;
