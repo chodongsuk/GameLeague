@@ -66,9 +66,14 @@ public class MainActivity extends AppCompatActivity {
         configureOfflineWebView(savedInstanceState);
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+
         if(sharedPreferences.getBoolean(QuickstartPreferences.AREA_CODE_CHECK, false) == false){//최초실행이 없는 경우만 실행.
             Intent intent = new Intent(this, Area1Activity.class);
             startActivityForResult(intent, AREA_RESULTCODE);
+        }
+        if(sharedPreferences.getBoolean(QuickstartPreferences.INTRO_CHECK, false) == false){
+            Intent intent = new Intent(this, IntroActivity.class);
+            startActivity(intent);
         }
         mRegistrationBroadcastReceiver = new BroadcastReceiver() {
             @Override

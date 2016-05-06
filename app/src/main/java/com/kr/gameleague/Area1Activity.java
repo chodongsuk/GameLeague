@@ -15,6 +15,7 @@ import kr.ds.data.BaseData;
 import kr.ds.data.BaseResultListener;
 import kr.ds.handler.AreaHandler;
 import kr.ds.utils.ProcessManager;
+import kr.ds.widget.ScrollGridView;
 
 /**
  * Created by Administrator on 2016-03-10.
@@ -22,7 +23,7 @@ import kr.ds.utils.ProcessManager;
 public class Area1Activity extends BaseActivity {
     private ArrayList<AreaHandler> mData;
     private BaseData mAreaData;
-    private GridView mGridView;
+    private ScrollGridView mGridView;
     private AreaGridAdapter mAreaGridAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class Area1Activity extends BaseActivity {
 
         ProcessManager.getInstance().addActivity(Area1Activity.this);
 
-        mGridView = (GridView)findViewById(R.id.gridview);
+        mGridView = (ScrollGridView)findViewById(R.id.gridview);
         mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

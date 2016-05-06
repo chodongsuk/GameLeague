@@ -29,6 +29,7 @@ dependencies {
     compile files('libs/buzzad.jar')
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
     compile project(':buzzscreen-sdk-full')
+    compile 'com.android.support:cardview-v7:23.1.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

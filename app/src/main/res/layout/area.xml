@@ -4,24 +4,61 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="#fff">
-    <TextView
-        android:padding="10dip"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimary"
-        android:gravity="center"
+
+    <ScrollView
+        android:id="@+id/scrollView_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="해당 지역을 선택 해주시기 바랍니다."/>
-    <GridView
-        android:paddingLeft="5dip"
-        android:paddingRight="5dip"
-        android:id="@+id/gridview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:numColumns="3"
-        android:horizontalSpacing="5dip"
-        android:verticalSpacing="5dip"
-        android:drawSelectorOnTop="true"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="10dip"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ed532f"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="지역선택"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ed532f">
+            </View>
+
+            <TextView
+                android:paddingTop="10dip"
+                android:padding="10dip"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="적립 천국에 오신걸을 환영합니다. \n매장에서 공짜로 이용할 수 있도록\n적립천국은 모든 지원을 아끼지 않겠습니다.\n\n지역을 선택하시면 매장 이벤트와 신규매장 알림 푸쉬를 받으실수 있습니다."/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d7d7d7">
+            </View>
+
+            <kr.ds.widget.ScrollGridView
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:horizontalSpacing="5dip"
+                android:verticalSpacing="5dip"
+                android:drawSelectorOnTop="true"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
