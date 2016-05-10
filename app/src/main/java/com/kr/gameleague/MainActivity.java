@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
                 public void run() {
                     Log.d(TAG, m_no+"");
                     BuzzAd.init("223485077489935", getApplicationContext());
-                    BuzzAd.showOfferWall(MainActivity.this, "게임리그 포인트 적립", m_no);
+                    BuzzAd.showOfferWall(MainActivity.this, getResources().getString(R.string.app_name)+" 포인트 적립", m_no);
 
                 }
             });
