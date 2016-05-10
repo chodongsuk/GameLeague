@@ -420,7 +420,7 @@ public class MainActivity extends AppCompatActivity {
 
             new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_alert)
-                    .setTitle("게임리그")
+                    .setTitle(getResources().getString(R.string.app_name))
                     .setMessage("어플을 종료 하시겠습니까?")
                     .setPositiveButton("예", new DialogInterface.OnClickListener() {
                         @Override
