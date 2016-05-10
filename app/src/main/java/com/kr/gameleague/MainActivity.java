@@ -417,7 +417,6 @@ public class MainActivity extends AppCompatActivity {
         if (mWebView.canGoBack()) {
             mWebView.goBack();
         }else {
-
             new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .setTitle(getResources().getString(R.string.app_name))
