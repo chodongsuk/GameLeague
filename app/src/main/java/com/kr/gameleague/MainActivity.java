@@ -180,9 +180,9 @@ public class MainActivity extends AppCompatActivity {
                                 UserProfile userProfile = BuzzScreen.getInstance().getUserProfile();
                                 // 포인트 적립을 위해서는 setUserId를 반드시 호출해야 함
                                 userProfile.setUserId(m_no);
-//                    userProfile.setBirthYear(1985);
-//                    userProfile.setGender(UserProfile.USER_GENDER_MALE);
-//                    userProfile.setRegion("서울특별시 관악구");
+                                userProfile.setBirthYear(1985);
+                                userProfile.setGender(UserProfile.USER_GENDER_FEMALE);
+                                userProfile.setRegion("서울특별시 용산구");
                                 // 버즈스크린 활성화
                                 BuzzScreen.getInstance().activate();
 
@@ -263,9 +263,9 @@ public class MainActivity extends AppCompatActivity {
                                 UserProfile userProfile = BuzzScreen.getInstance().getUserProfile();
                                 // 포인트 적립을 위해서는 setUserId를 반드시 호출해야 함
                                 userProfile.setUserId(m_no);
-//                    userProfile.setBirthYear(1985);
-//                    userProfile.setGender(UserProfile.USER_GENDER_MALE);
-//                    userProfile.setRegion("서울특별시 관악구");
+                                userProfile.setBirthYear(1985);
+                                userProfile.setGender(UserProfile.USER_GENDER_FEMALE);
+                                userProfile.setRegion("서울특별시 용산구");
                                 // 버즈스크린 활성화
                                 BuzzScreen.getInstance().activate();
 
